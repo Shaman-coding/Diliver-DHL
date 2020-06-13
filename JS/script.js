@@ -1,10 +1,8 @@
-function generateIntegers(m, n) {
-  let arr = [];
-  while(m <= n){
-    arr.push(m);
-    m++;
+function nextId(ids){
+  for(let i = 0; i < ids.length; i++){
+    if(ids.indexOf(i) == -1){
+      return i;
+    }
   }
-  return arr;
+  return ids.length;
 }
- console.log(generateIntegers(1,9));
-  
